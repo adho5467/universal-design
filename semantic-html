@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic html5</title>
+    <link href="css/semantics.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- main heading of page - only use h1 once per page -->
+  <header>
+    <h1>Proper use of html5 semantic markup</h1>
+</header>
+<nav>
+  <h2 class="sr-only">main navigation</h2>
+    <ul>
+        <li><a href="#latin-dummy">LINK 1</a></li>
+        <li><a href="#">LINK 2</a></li>
+        <li><a href="#">LINK 3</a></li>
+    </ul>
+</nav>
+
+ <!-- main content of the page -->
+ <main>
+    <!-- grouping content together -->
+    <section id="latin-dummy">
+      <h2>latin "dummy" text</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure expedita porro adipisci autem provident placeat, mollitia repudiandae possimus, cum ab maxime voluptatum, ex iste, incidunt nihil molestiae officia laboriosam ratione.
+      </p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique autem vero dignissimos eaque cum expedita, praesentium, suscipit tenetur quasi animi debitis! Quaerat mollitia excepturi similique amet accusamus aliquam ipsam unde.</p>
+    <!-- informational images -->
+      <figure>
+          <img src="img/cheese.jpg" alt="platter of types cheeses" width="400px" height="288px">
+          <figcaption>cheese platter</figcaption>
+      </figure>
+
+      <aside>
+        <h2>supplementary latin links</h2>
+        <ul>
+            <li><a href="#">how to learn latin</a>
+        </ul>
+    </aside>
+    </section>
+  </main> 
+  <aside>
+    <h2>supplementary social media links</h2>
+    <ul>
+        <li><a href="#">twitter</a></li>
+    </ul>
+</aside> 
+<footer>
+    <p>designed by me</p>
+    <address>email@colorado.edu</address>
+    <small>&copy; 2023</small>
+  </footer>
+</div> <!-- end container -->
+</body>
+</html>
