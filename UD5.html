@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Emblem Games</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #7fa5df;
+            color: #222;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header, footer {
+            background: #315a78;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav, main {
+            padding: 15px;
+        }
+
+        a {
+            color: #315a78;
+        }
+
+        header a, footer a {
+            color: white;
+        }
+
+        section, article, aside {
+            background: rgb(255, 255, 255);
+            padding: 15px;
+            margin-bottom: 15px;
+            border: 1px solid #315a78;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #777;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background: #ddd;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, select, textarea, button {
+            font: inherit;
+            max-width: 100%;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 8px;
+        }
+
+        button {
+            margin-top: 12px;
+            padding: 8px 15px;
+        }
+
+        :focus-visible {
+            outline: 3px solid #b45309;
+            outline-offset: 3px;
+        }
+
+        .skip-menu {
+            background: white;
+            padding: 10px;
+            color: #23452c;
+        }
+
+        .skip-menu a {
+            display: block;
+            color: #23452c;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="top">
+        <h1>Fire Emblem Games</h1>
+
+        <details class="skip-menu">
+            <summary>Skip Navigation</summary>
+            <nav aria-label="Skip navigation">
+                <a href="#games">Games</a>
+                <a href="#comparison">Comparison Table</a>
+                <a href="#strategy">Strategy</a>
+                <a href="#feedback">Feedback Form</a>
+            </nav>
+        </details>
+
+        <nav aria-label="Main navigation">
+            <a href="#games">Games</a> |
+            <a href="#comparison">Compare</a> |
+            <a href="#strategy">Strategy</a> |
+            <a href="#feedback">Feedback</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="games">
+            <h2>Popular Games</h2>
+
+            <article>
+                <h3>Fire Emblem Awakening</h3>
+                <p>Released in <time datetime="2012">2012</time>, this game follows Chrom and Robin as they protect their kingdom.</p>
+            </article>
+
+            <article>
+                <h3>Fire Emblem: Three Houses</h3>
+                <p>Released in <time datetime="2019">2019</time>, this game lets players teach students and choose between three houses.</p>
+            </article>
+
+            <article>
+                <h3>Fire Emblem Engage</h3>
+                <p>Released in <time datetime="2023">2023</time>, this game features tactical battles and heroes from earlier games.</p>
+            </article>
+        </section>
+
+        <section id="comparison">
+            <h2>Compare the Games</h2>
+
+            <table>
+                <caption>Basic information and comparison for the Fire Emblem games</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Game</th>
+                        <th scope="col">Release Year</th>
+                        <th scope="col">Main Feature</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Awakening</th>
+                        <td>2012</td>
+                        <td>Character relationships</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Three Houses</th>
+                        <td>2019</td>
+                        <td>School and house choices</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Engage</th>
+                        <td>2023</td>
+                        <td>Returning heroes</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="strategy">
+            <h2>Basic Strategy</h2>
+
+            <article>
+                <h3>Plan Your Moves</h3>
+                <p>Fire Emblem battles take place on a grid. Each unit has different strengths, weapons, and movement abilities.</p>
+                <p>Check enemy ranges before moving and protect units with low health.</p>
+            </article>
+
+            <aside>
+                <h3> Beginner Tip</h3>
+                <p>Save your game often and learn which weapons work best against different enemies.</p>
+            </aside>
+
+            <p>Learn more on the
+                <a href="https://www.nintendo.com/" target="_blank" rel="noopener noreferrer">official Nintendo website</a>.
+            </p>
+        </section>
+
+        <section id="feedback">
+            <h2>Feedback Form</h2>
+            <p>Tell us which game interests you most.</p>
+
+            <form>
+                <fieldset>
+                    <legend>Your Feedback</legend>
+
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" autocomplete="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" autocomplete="email">
+
+                    <label for="game">Favorite Game</label>
+                    <select id="game" name="game" required>
+                        <option value="">Choose a game</option>
+                        <option value="awakening">Awakening</option>
+                        <option value="three-houses">Three Houses</option>
+                        <option value="engage">Engage</option>
+                    </select>
+
+                    <label for="comments">Comments</label>
+                    <textarea id="comments" name="comments" rows="4" required></textarea>
+
+                    <button type="submit">
+                        Submit
+                    </button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="#top">Back to Top</a></p>
+        <p>Fan-made page</p>
+    </footer>
+</body>
+</html>
