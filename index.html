@@ -1,61 +1,42 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-
-    <title>Addie Horstman Portfolio Site</title>
-    <style>
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            margin-top: 50px;
-            padding: 30px;
-            background-color:bisque;
-            border-radius: 20px;
-
-        }
-        body { padding: 40px 80px; }
-        nav {
-            text-align: center;
-        }
-
-        nav a {
-            margin: 0 15px;
-        }
-        .about-me {
-            margin-top: 50px;
-            padding: 30px;
-            border-radius: 20px;
-            background-color: lightblue;
-            display: flex;
-            align-items: center;
-            gap: 40px;
-        }
-
-        .about-me img {
-            width: 200px;
-        }
-    </style>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addie Horstman Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   </head>
-  <body>
+  <body class="about-me-index">
     <header>
     <h1>Addie Horstman</h1>
 
-    <nav>
+    <details class="skip-menu">
+        <summary>Skip Navigation</summary>
+            <nav aria-label="Skip navigation">
+                <a href="index.html">Home</a>
+                <a href="/semantic-html.html">Wiki Page Project</a>
+                <a href="/UD5.html">Tables, Forms, Tabbed Browsing, and Screen Reading</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </details>
+    <nav aria="Main navigation">
       <a href="index.html">Home</a>
       <a href="/semantic-html.html">Wiki Page Project</a>
-      <a href="/UD5.html">Universal Design Project 5</a>
+      <a href="/UD5.html">Tables, Forms, Tabbed Browsing, and Screen Reading</a>
       <a href="contact.html">Contact</a>
     </nav>
     </header>
+    <main>
     <section class="about-me">
-        <div>
         <h2>About Me</h2>
-        <p>Hi! I am Addie, I am a computer science major with a minor in CTD, I don't have much experience with web development</p>
-        </div>
+        <p>Hi! I am Addie, I am a computer science major with a minor in CTD, I don't have much experience with web development, and am hoping to learn more about it. I have a cat named Freya who is almost 8 years old, and two roommates who are also in the college
+            of engineering. I currently work as a hardware technician, and hope to continue to work in IT once I graduate. I have experience with Windows OS, and some programming langues including C, C++, and Java. I am more interested in computers from a hardware perspective
+            than a programming one, but the two often intersect, and I have built a couple PC's myself for fun.
+        </p>
         <img src="kittycat.png" alt="Sad cat image">
     </section>
+    </main>
   </body>
   </html>

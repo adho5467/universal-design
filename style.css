@@ -72,3 +72,40 @@ figcaption {
   color: #444;
   font-size: 14px;
 }
+
+/* for my index.html page */
+.skip-menu {
+  background: white;
+  padding: 10px;
+  color: #315a78;
+  }
+
+.skip-menu a {
+  display: block;
+  color: white;
+  }
+
+img {
+  max-width: 800px;
+  margin: 25px auto;
+}
+.about-me{
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+ }
+
+.about-me h2{
+  border-bottom: 3px solid pink;
+  padding-bottom: 5px;
+}
+
+.about-me h1,h2,h3,h4{
+  font-family: "Merriweather", serif;
+  color: rgb(26, 0, 56);
+}
+
+.about-me-index nav {
+  background: rgb(26, 0, 56);
+  padding: 10px;
+}
