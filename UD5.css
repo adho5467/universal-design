@@ -1,0 +1,86 @@
+
+        body {
+            font-family: 'Redaction 35', Georgia, serif;
+            background: #7fa5df;
+            color: #222;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header, footer {
+            background: #315a78;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav, main {
+            padding: 15px;
+        }
+
+        a {
+            color: #315a78;
+        }
+
+        header a, footer a {
+            color: white;
+        }
+
+        section, article, aside {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border: 1px solid #315a78;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #777;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background: white;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, select, textarea, button {
+            font: inherit;
+            max-width: 100%;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 8px;
+        }
+
+        button {
+            margin-top: 12px;
+            padding: 8px 15px;
+        }
+
+        :focus-visible {
+            outline: 3px solid #b45309;
+            outline-offset: 3px;
+        }
+
+        .skip-menu {
+            background: white;
+            padding: 10px;
+            color: #23452c;
+        }
+
+        .skip-menu a {
+            display: block;
+            color: #23452c;
+        }
