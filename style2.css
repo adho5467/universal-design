@@ -26,19 +26,29 @@ header, nav, main, aside, footer{
     border: 1px solid;
     background-color: #2B1F33;
 }
-nav ul{
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: space-between
 
+nav ul{
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
 nav a{
     color:burlywood;
     display: block;
-    color: burlywood;
     text-decoration: none;
+}
+
+nav a:hover{
+    color:#c0b0cb;
+}
+
+.skip-link{
+    color:burlywood;
+}
+.skip-link:hover{
+    color:#c0b0cb;
 }
 .container{
     max-width: 1200px;
@@ -73,5 +83,25 @@ nav a{
             "aside1"
             "aside2"
             "footer";
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header header"
+            "navbar navbar"
+            "main   main"
+            "aside1 aside2"
+            "footer footer";
+    }
+
+    .navbar ul {
+        flex-direction: column;
     }
 }
