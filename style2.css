@@ -1,0 +1,77 @@
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+
+}
+
+body{
+    background-color: #281536;
+    font-family: 'Courier Prime', 'Courier New', Courier, monospace;
+    font-size: 15px;
+    color:burlywood;
+}
+h1, h2 {
+    font-family: 'Redaction 35', Georgia, serif;
+    font-weight: 700;
+}
+header, nav, main, aside, footer{
+    padding: 10px;
+    border: 1px solid;
+    background-color: #2B1F33;
+}
+nav ul{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between
+
+}
+
+nav a{
+    color:burlywood;
+    display: block;
+    color: burlywood;
+    text-decoration: none;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 1rem;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: 
+    2fr 2fr 2fr;
+    grid-template-areas: 
+    "header header header"
+    "navbar navbar navbar"
+    "aside1 main aside2"
+    "footer footer footer";
+}
+
+.header  { grid-area: header; }
+.navbar  { grid-area: navbar; }
+.aside1  { grid-area: aside1; }
+.main    { grid-area: main; }
+.aside2  { grid-area: aside2; }
+.footer  { grid-area: footer; }
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "navbar"
+            "main"
+            "aside1"
+            "aside2"
+            "footer";
+    }
+}
