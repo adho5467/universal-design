@@ -1,0 +1,43 @@
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+
+}
+body{
+    background-color: #281536;
+    font-family: 'Courier Prime', 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    line-height: 1.65;
+    color: burlywood;
+    margin: 0;
+}
+
+h1, h2, h3{
+    font-family: 'Redaction 35', Georgia, serif;
+    font-weight: 700;
+    line-height: 1.15;
+}
+h1{ font-size: clamp(2rem, 8vw, 3.5rem); }
+
+p, li{ max-width: 70ch; }
+
+a{ color: burlywood; }
+a:hover{ color: #c0b0cb; }
+
+:focus-visible{
+    outline: 3px solid burlywood;
+    outline-offset: 3px;
+}
+
+header, nav, main, aside, footer{
+    padding: 10px;
+    border: 1px solid;
+    background-color: #2B1F33;
+}
